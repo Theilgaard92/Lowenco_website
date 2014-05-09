@@ -1,3 +1,26 @@
 /* all app scss styles here */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+.top-bar {
+	//border-bottom: 4px solid;
+	//border-color: red;
+	.top-bar-section {
+		.left li:hover {
+			//text-decoration: underline;
+		}
+		.right {
+			.has-dropdown {
+				.dropdown {
+					li a { 
+					line-height: 70px;
+					}
+					li:hover {
+					//text-decoration: underline;	
+					}
+
+				}
+			}
+		}
+	}	
+}
