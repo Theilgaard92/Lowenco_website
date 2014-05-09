@@ -3291,7 +3291,7 @@ dialog, .reveal-modal {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1.25rem;
   border: solid 1px #666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
@@ -3313,9 +3313,9 @@ dialog, .reveal-modal {
       width: 80%; } }
   @media only screen and (min-width:40.063em) {
     dialog, .reveal-modal {
-      top: 6.25rem; } }
+      top: 5rem; } }
   dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     line-height: 1;
     position: absolute;
     top: 0.5rem;
@@ -5059,7 +5059,6 @@ th.hide-for-touch {
 /* all app scss styles here */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 .container {
-  height: 100%;
   background-image: url('../images/background.jpg'); }
 
 .sidenav li:not(:last-child) {
@@ -5068,6 +5067,14 @@ th.hide-for-touch {
   margin-top: 10px; }
 .sidenav li {
   list-style: none; }
+  .sidenav li:hover .item-title {
+    padding-right: 2em; }
+  .sidenav li .item-title {
+    color: #fff;
+    background: #00468e;
+    padding: 0 1em;
+    position: relative;
+    top: 3.5em; }
 .sidenav li a #item1 {
   background-image: url(http://placehold.it/210x100);
   width: 210px;
@@ -5088,3 +5095,6 @@ th.hide-for-touch {
   background-image: url(http://placehold.it/210x100);
   width: 210px;
   height: 100px; }
+
+footer p {
+  margin-right: 3em; }
