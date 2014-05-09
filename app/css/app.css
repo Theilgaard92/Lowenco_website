@@ -417,7 +417,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 100%;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -4143,7 +4143,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -5058,5 +5058,38 @@ th.hide-for-touch {
 
 /* all app scss styles here */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+<<<<<<< HEAD
 .top-bar .top-bar-section .right .has-dropdown .dropdown li a {
   line-height: 70px; }
+=======
+.container {
+  height: 100%;
+  background-image: url('../images/background.jpg'); }
+
+.sidenav li:not(:last-child) {
+  margin-bottom: 10px; }
+.sidenav li:first-child {
+  margin-top: 10px; }
+.sidenav li {
+  list-style: none; }
+.sidenav li a #item1 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item2 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item3 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item4 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item5 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+>>>>>>> FETCH_HEAD
