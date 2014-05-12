@@ -2,9 +2,11 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
-.container {
+#container {
 	//height: 100%;
 	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: right 0px top 0px;
 }
 
 .sidenav {
@@ -24,7 +26,7 @@
 			background: $primary-color;
 			padding: 0 1em;
 			position: relative;
-			top: 3.5em;
+			top: 5em;
 		}
 	}
 	li a #item1 {

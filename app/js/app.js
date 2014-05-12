@@ -15,6 +15,20 @@ var app = (function(document, $) {
 		init: _init
 	};
 
+	 var timezone = new Date().getTimezoneOffset() * -2;
+      console.log(timezone);
+
+      var bg = document.getElementById("container");
+
+      var moveBg = function () {
+         if (timezone === 120) {
+            bg.style.background-position = "right 0px top 0px";
+         } else if (timezone === 240) {
+            bg.style.background-position = "right -100px top 0px";
+         }
+      }
+      moveBg();
+
 })(document, jQuery);
 
 (function() {
@@ -23,3 +37,4 @@ var app = (function(document, $) {
 	app.init();
 
 })();
+

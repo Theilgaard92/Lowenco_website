@@ -56,7 +56,7 @@
       </section>
     </nav>
 
-    <div class="container">
+    <div class="container" id="container">
 
       <div class="row">
         <div class="large-3 columns">
@@ -118,8 +118,26 @@
         <p class="right"><small>C 2014, Lowenco. All rights reserved.</small></p>
       </footer>
     </div>
-    
 
+
+   <!-- This script detects users timezone and changes background position-->
+   <script>
+      var timezone = new Date().getTimezoneOffset() * -1;
+      console.log(timezone);
+
+      var bg = document.getElementById("container");
+
+      var moveBg = function () {
+         if (timezone === 120) {
+            bg.style.backgroundPosition = "right 0px top 0px";
+         } else if (timezone === 240) {
+            bg.style.backgroundPosition = "right -100px top 0px";
+         }
+      }
+      moveBg();
+   </script>
+
+   
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
