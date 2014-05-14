@@ -15,19 +15,6 @@ var app = (function(document, $) {
 		init: _init
 	};
 
-	 var timezone = new Date().getTimezoneOffset() * -2;
-      console.log(timezone);
-
-      var bg = document.getElementById("container");
-
-      var moveBg = function () {
-         if (timezone === 120) {
-            bg.style.background-position = "right 0px top 0px";
-         } else if (timezone === 240) {
-            bg.style.background-position = "right -100px top 0px";
-         }
-      }
-      moveBg();
 
 })(document, jQuery);
 
@@ -37,4 +24,13 @@ var app = (function(document, $) {
 	app.init();
 
 })();
+
+// $(document).ready(function(){
+// 	$("#item1").click(function(){
+//   		$("#block1").slideToggle('slow');
+// 	});
+// 	$("#item2").click(function(){
+//   		$("#block2").slideToggle();
+// 	});
+// });
 

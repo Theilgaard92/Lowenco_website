@@ -3309,11 +3309,11 @@ dialog, .reveal-modal {
     margin-bottom: 0; }
   @media only screen and (min-width:40.063em) {
     dialog, .reveal-modal {
-      margin-left: -40%;
-      width: 80%; } }
+      margin-left: -400px;
+      width: 800px; } }
   @media only screen and (min-width:40.063em) {
     dialog, .reveal-modal {
-      top: 5rem; } }
+      top: 5.625rem; } }
   dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
     font-size: 1.875rem;
     line-height: 1;
@@ -5098,6 +5098,11 @@ th.hide-for-touch {
   background-image: url(http://placehold.it/210x100);
   width: 210px;
   height: 100px; }
+
+.revealblocks div {
+  display: none;
+  position: relative;
+  background: #fff; }
 
 footer p {
   margin-right: 3em; }
