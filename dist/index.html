@@ -4,91 +4,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lowenco | Welcome</title>
+    <title>Foundation project</title>
     <link rel="stylesheet" href="css/libraries.min.css"/>
     <link rel="stylesheet" href="css/app.min.css"/>
     <script src="js/vendor/modernizr.min.js"></script>
   </head>
   <body>
-    
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="index.html"><img data-interchange="[images/lowenco_logo_medium.png, (default)], [images/lowenco_logo1.png, (large)]"></a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar"><a href="#"><span ><i class="fa fa-bars"></i></span></a></li>
-      </ul>
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="has-dropdown">
-            <a href="#"><i class="fa fa-th-large"></i> Language</a>
-            <ul class="dropdown">
-              <li><a href="#"><i class="fa fa-th-large"></i> English</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> German</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> French</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Spanish</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Russian</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Chinese</a></li>
-
-            </ul>
-          </li>
+    <div class="row">
+      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+        <h1>Yo Foundation 9!</h1>
+        <ul>
+          <li>Sass compiling (Ruby or Node/Libsass)</li>
+          <li>Publishing to dist directory</li>
+          <li>Server with LiveReload</li>
+          <li>JSHint</li>
+          <li>Grunt Bower install</li>
+          <li>Imagemin</li>
+          <li>Font Awesome (option)</li>
         </ul>
-
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#"><i class="fa fa-keyboard-o"></i> Model Selector</a></li>
-          <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
-          <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
-          <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
+        <h1>Grunt tasks:</h1>
+        <ul> 
+          <li>'grunt' - watching (Sass, Server on 127.0.0.1:9000 with LiveReload)</li>
+          <li>'grunt compile-sass' - Sass</li>
+          <li>'grunt validate-js' - JSHint</li>
+          <li>'grunt bower-install' - injecting bower libraries</li>
+          <li>'grunt publish' - dist directory</li>
+          <li>'grunt server-dist' - server on 127.0.0.1:9001 - dist directory (preview only)</li>
         </ul>
-      </section>
-    </nav>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="large-3 columns">
-          <ul class="sidenav">
-            <li>
-              <a href="#">
-                <div id="item1"></div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div id="item2"></div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div id="item3"></div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div id="item4"></div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div id="item5"></div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="large-9 columns storage-unit">
-            <img src="images/container.png" alt="">
-        </div>
-
+        <h2 class="text-right">
+          <a href="https://github.com/juliancwirko/generator-zf5"><i class="fa fa-github"></i></a>
+        </h2>
       </div>
     </div>
-
-    
-    
 
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
