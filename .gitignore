@@ -2,3 +2,14 @@ node_modules
 .tmp
 app/bower_components
 .sass-cache
+app/index.html
+
+app/scss/_settings.scss
+
+dist/css/app.min.css
+
+dist/images/container.png
+
+dist/index.html
+
+app/css/app.css

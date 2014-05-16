@@ -63,9 +63,11 @@ nav {
 	border-color: #666;
 }
 
-.container {
-	height: 100%;
+#container {
+	/*height: 100%;*/
 	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: right 0px top 0px;
 }
 
 .sidenav {
@@ -77,6 +79,16 @@ nav {
 	}
 	li {
 		list-style:none;
+		&:hover {
+			.item-title{padding-right:2em;}
+		}
+		.item-title {
+			color:#fff;
+			background: $primary-color;
+			padding: 0 1em;
+			position: relative;
+			top: 5em;
+		}
 	}
 	li a #item1 {
 		background-image: url(http://placehold.it/210x100);
@@ -103,4 +115,20 @@ nav {
 		width: 210px;
 		height: 100px;
 	}
+}
+
+.storage-unit {
+	
+}
+
+.revealblocks {
+	div {
+		display: none;
+		position: relative;
+		background: #fff;
+	}
+}
+
+footer p {
+	margin-right: 3em;
 }
