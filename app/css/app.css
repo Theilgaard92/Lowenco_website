@@ -3309,8 +3309,8 @@ dialog, .reveal-modal {
     margin-bottom: 0; }
   @media only screen and (min-width:40.063em) {
     dialog, .reveal-modal {
-      margin-left: -400px;
-      width: 800px; } }
+      margin-left: -30%;
+      width: 60%; } }
   @media only screen and (min-width:40.063em) {
     dialog, .reveal-modal {
       top: 5.625rem; } }
@@ -5099,11 +5099,14 @@ th.hide-for-touch {
   width: 210px;
   height: 100px; }
 
+.storage-unit {
+  margin-top: 4rem; }
 
 .revealblocks div {
   display: none;
   position: relative;
   background: #fff; }
+
 
 footer p {
   margin-right: 3em; }
