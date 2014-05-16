@@ -5079,23 +5079,23 @@ th.hide-for-touch {
     position: relative;
     top: 5em; }
 .sidenav li a #item1 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-general.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item2 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-medical.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item3 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-food.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item4 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-humanitarian.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item5 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-building.jpg);
   width: 210px;
   height: 100px; }
 
