@@ -15,7 +15,6 @@ var app = (function(document, $) {
 		init: _init
 	};
 
-
 })(document, jQuery);
 
 (function() {
@@ -24,13 +23,3 @@ var app = (function(document, $) {
 	app.init();
 
 })();
-
-// $(document).ready(function(){
-// 	$("#item1").click(function(){
-//   		$("#block1").slideToggle('slow');
-// 	});
-// 	$("#item2").click(function(){
-//   		$("#block2").slideToggle();
-// 	});
-// });
-
