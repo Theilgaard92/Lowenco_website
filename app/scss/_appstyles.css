@@ -1,2 +1,35 @@
 /* all app scss styles here */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+.top-bar .top-bar-section .right .has-dropdown .dropdown li a {
+  line-height: 70px; }
+
+.container {
+  height: 100%;
+  background-image: url("../images/background.jpg"); }
+
+.sidenav li:not(:last-child) {
+  margin-bottom: 10px; }
+.sidenav li:first-child {
+  margin-top: 10px; }
+.sidenav li {
+  list-style: none; }
+.sidenav li a #item1 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item2 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item3 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item4 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
+.sidenav li a #item5 {
+  background-image: url(http://placehold.it/210x100);
+  width: 210px;
+  height: 100px; }
