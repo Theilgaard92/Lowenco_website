@@ -79,28 +79,55 @@ nav {
 		list-style:none;
 	}
 	li a #item1 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-general.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item2 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-medical.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item3 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-food.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item4 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-humanitarian.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item5 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-building.jpg);
 		width: 210px;
 		height: 100px;
 	}
+
+}
+
+.storage-unit {
+	margin-top: 4rem;
+}
+
+.revealblocks {
+	div {
+		display: none;
+		position: relative;
+		background: #fff;
+	}
+}
+
+.reveal-modal {
+	//margin-left: -180px;
+	//left:0;
+}
+
+footer p {
+	margin-right: 3em;
 }
