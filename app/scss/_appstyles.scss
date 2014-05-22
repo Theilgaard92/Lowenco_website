@@ -1,12 +1,71 @@
 /* all app scss styles here */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+$primary-color: #00468e;
 
-#container {
-	/*height: 100%;*/
+nav {
+	border-bottom: 1px solid;
+	color: $primary-color;
+}
+
+.top-bar {
+		.menu-icon {
+			a { 
+				color: $primary-color;
+			}
+		}
+	.top-bar-section {
+
+		.left {
+			li {
+				a {
+					margin-bottom: -1px;
+				}
+			}
+		}
+		.right {
+			li {
+				a {
+					margin-bottom: -1px;
+				}
+			}
+			.has-dropdown {
+				.dropdown {
+					li a { 
+					line-height: 70px;
+					}
+					li:hover {
+					//text-decoration: underline;	
+					}
+
+				}
+			}
+		}
+	}
+}	
+
+
+
+.toggle-topbar {	
+	.toggle-menu {
+	font-size: 1rem;
+	}
+	li {
+		a{
+		border-bottom: 1px solid;
+		color: #ccc;
+		}
+	}
+}
+.top-bar-section .dropdown li:not(.has-form) > a:not(.button) {
+	border-bottom: 1px solid;
+	//border-left: 1px solid;
+	border-color: #666;
+}
+
+.container {
+	height: 100%;
 	background-image: url('../images/background.jpg');
-	background-repeat: no-repeat;
-	background-position: right 0px top 0px;
 }
 
 .sidenav {
@@ -18,66 +77,30 @@
 	}
 	li {
 		list-style:none;
-		&:hover {
-			.item-title{padding-right:2em;}
-		}
-		.item-title {
-			color:#fff;
-			background: $primary-color;
-			padding: 0 1em;
-			position: relative;
-			top: 5em;
-		}
 	}
 	li a #item1 {
-		//background-image: url(http://placehold.it/210x100);
-		background-image: url(../images/menu-general.jpg);
+		background-image: url(http://placehold.it/210x100);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item2 {
-		//background-image: url(http://placehold.it/210x100);
-		background-image: url(../images/menu-medical.jpg);
+		background-image: url(http://placehold.it/210x100);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item3 {
-		//background-image: url(http://placehold.it/210x100);
-		background-image: url(../images/menu-food.jpg);
+		background-image: url(http://placehold.it/210x100);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item4 {
-		//background-image: url(http://placehold.it/210x100);
-		background-image: url(../images/menu-humanitarian.jpg);
+		background-image: url(http://placehold.it/210x100);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item5 {
-		//background-image: url(http://placehold.it/210x100);
-		background-image: url(../images/menu-building.jpg);
+		background-image: url(http://placehold.it/210x100);
 		width: 210px;
 		height: 100px;
 	}
-}
-
-.storage-unit {
-	margin-top: 4rem;
-}
-
-.revealblocks {
-	div {
-		display: none;
-		position: relative;
-		background: #fff;
-	}
-}
-
-.reveal-modal {
-	//margin-left: -180px;
-	//left:0;
-}
-
-footer p {
-	margin-right: 3em;
 }
