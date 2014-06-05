@@ -3291,7 +3291,7 @@ dialog, .reveal-modal {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1.25rem;
   border: solid 1px #666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
@@ -3309,13 +3309,13 @@ dialog, .reveal-modal {
     margin-bottom: 0; }
   @media only screen and (min-width:56.5em) {
     dialog, .reveal-modal {
-      margin-left: -40%;
-      width: 80%; } }
+      margin-left: -30%;
+      width: 60%; } }
   @media only screen and (min-width:56.5em) {
     dialog, .reveal-modal {
-      top: 6.25rem; } }
+      top: 5.625rem; } }
   dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     line-height: 1;
     position: absolute;
     top: 0.5rem;
@@ -5082,7 +5082,9 @@ nav {
 
 @media (min-width: 900px) {
   .table-nav {
-    display: none; } }
+    display: none; }
+  .storage-unit {
+    margin: 0 auto; } }
 
 @media (max-width: 900px) {
   .top-bar .top-bar-section .right .has-dropdown .dropdown li {
@@ -5096,6 +5098,8 @@ nav {
       font-weight: 600; }
       .top-bar .top-bar-section .right .has-dropdown .dropdown li a:hover {
         color: #fff; }
+    .top-bar .top-bar-section .right .has-dropdown .dropdown li .storage-unit {
+      margin: 0 auto; }
   .list-nav {
     display: none; }
   .table-nav {
@@ -5128,9 +5132,11 @@ nav {
         padding: 20px;
         color: white; } }
 
-.container {
-  height: 100%;
-  background-image: url('../images/background.jpg'); }
+#container {
+  /*height: 100%;*/
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: right 0px top 0px; }
 
 .sidenav li:not(:last-child) {
   margin-bottom: 10px; }
@@ -5138,24 +5144,32 @@ nav {
   margin-top: 10px; }
 .sidenav li {
   list-style: none; }
+  .sidenav li:hover .item-title {
+    padding-right: 2em; }
+  .sidenav li .item-title {
+    color: #fff;
+    background: #00468e;
+    padding: 0 1em;
+    position: relative;
+    top: 4em; }
 .sidenav li a #item1 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-general.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item2 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-medical.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item3 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-food.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item4 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-humanitarian.jpg);
   width: 210px;
   height: 100px; }
 .sidenav li a #item5 {
-  background-image: url(http://placehold.it/210x100);
+  background-image: url(../images/menu-building.jpg);
   width: 210px;
   height: 100px; }
 

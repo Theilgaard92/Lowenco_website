@@ -67,6 +67,9 @@ nav {
 	.table-nav {
 		display: none;
 	}
+	.storage-unit {
+		margin: 0 auto;
+	}
 }
 @media (max-width: 900px) {
 	
@@ -85,6 +88,9 @@ nav {
 				color: #fff;
 			} 
 		}
+	.storage-unit {
+		margin: 0 auto;
+	}
 }
 
 	.list-nav {
@@ -114,7 +120,6 @@ nav {
 			font-size: 1rem;
 			color: $primary-color;
 			text-align: center;
-			
 		}
 	}
 	.top-bar.expanded {
@@ -138,11 +143,16 @@ nav {
 
 
 
-.container {
-	height: 100%;
 
+// this is Toms writing here, please do not edit 
+
+#container {
+	/*height: 100%;*/
 	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: right 0px top 0px;
 }
+
 
 .sidenav {
 	li:not(:last-child) {
@@ -153,34 +163,51 @@ nav {
 	}
 	li {
 		list-style:none;
+		&:hover {
+			.item-title{padding-right:2em;}
+		}
+		.item-title {
+			color:#fff;
+			background: $primary-color;
+			padding: 0 1em;
+			position: relative;
+			top: 4em;
+		}
 	}
 	li a #item1 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-general.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item2 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-medical.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item3 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-food.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item4 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-humanitarian.jpg);
 		width: 210px;
 		height: 100px;
 	}
 	li a #item5 {
-		background-image: url(http://placehold.it/210x100);
+		//background-image: url(http://placehold.it/210x100);
+		background-image: url(../images/menu-building.jpg);
 		width: 210px;
 		height: 100px;
 	}
-
 }
+
+
+
 
 .storage-unit {
 	margin-top: 4rem;
