@@ -5175,6 +5175,8 @@ nav {
 
 .storage-unit {
   margin-top: 4rem; }
+  .storage-unit.small-12 {
+    margin-top: 0; }
 
 .revealblocks div {
   display: none;

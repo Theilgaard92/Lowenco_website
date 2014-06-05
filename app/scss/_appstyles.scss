@@ -211,8 +211,8 @@ nav {
 
 .storage-unit {
 	margin-top: 4rem;
-	.center {
-		
+	&.small-12 {
+		margin-top: 0;
 	}
 }
 
