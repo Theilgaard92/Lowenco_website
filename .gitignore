@@ -2,3 +2,6 @@ node_modules
 .tmp
 app/bower_components
 .sass-cache
+assets/container_nolines.psd
+
+app/scss/_appstyles.css

@@ -140,6 +140,7 @@ nav {
 
 .container {
 	height: 100%;
+
 	background-image: url('../images/background.jpg');
 }
 
@@ -178,4 +179,29 @@ nav {
 		width: 210px;
 		height: 100px;
 	}
+
+}
+
+.storage-unit {
+	margin-top: 4rem;
+	.center {
+		
+	}
+}
+
+.revealblocks {
+	div {
+		display: none;
+		position: relative;
+		background: #fff;
+	}
+}
+
+.reveal-modal {
+	//margin-left: -180px;
+	//left:0;
+}
+
+footer p {
+	margin-right: 3em;
 }

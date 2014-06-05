@@ -3277,7 +3277,7 @@ ul.pagination {
   height: 100%;
   width: 100%;
   background: #000;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 99;
   display: none;
   top: 0;
@@ -5158,3 +5158,15 @@ nav {
   background-image: url(http://placehold.it/210x100);
   width: 210px;
   height: 100px; }
+
+.storage-unit {
+  margin-top: 4rem; }
+
+.revealblocks div {
+  display: none;
+  position: relative;
+  background: #fff; }
+
+
+footer p {
+  margin-right: 3em; }
