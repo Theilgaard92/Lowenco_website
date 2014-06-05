@@ -5100,7 +5100,8 @@ nav {
     display: none; }
   .table-nav {
     width: 100%;
-    border: none; }
+    border: none;
+    padding-bottom: 0px; }
     .table-nav td {
       background-color: #fff;
       height: 3.2rem;
@@ -5113,7 +5114,19 @@ nav {
     .table-nav a {
       font-size: 1rem;
       color: #00468e;
-      text-align: center; } }
+      text-align: center; }
+  .top-bar.expanded {
+    height: auto; }
+  .mobile-nav {
+    margin-left: 0%;
+    margin-right: 25%; }
+    .mobile-nav a {
+      padding: 16px;
+      line-height: 3.6875rem; }
+      .mobile-nav a:hover {
+        background-color: #00468e;
+        padding: 20px;
+        color: white; } }
 
 .container {
   height: 100%;

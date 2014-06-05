@@ -94,6 +94,7 @@ nav {
 	.table-nav {
 		width: 100%;
 		border: none;
+		padding-bottom: 0px;
 		tr{
 			//text-align: center;
 		}
@@ -116,7 +117,25 @@ nav {
 			
 		}
 	}
+	.top-bar.expanded {
+		height: auto;
+	}
+	.mobile-nav {
+		margin-left: 0%;
+		margin-right: 25%;
+		a {
+			padding: 16px;
+			line-height: rem-calc(59);
+			&:hover {
+				background-color: $primary-color;
+				padding: 20px;
+				color: white;
+			}
+		}
+	}
+
 }
+
 
 
 .container {
