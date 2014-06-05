@@ -5,3 +5,5 @@ app/bower_components
 assets/container_nolines.psd
 
 app/scss/_appstyles.css
+
+app/css/app.css
