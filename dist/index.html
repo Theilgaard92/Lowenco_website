@@ -3,10 +3,11 @@
 <html class="no-js" lang="en" >
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name  ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lowenco | Welcome</title>
     <link rel="stylesheet" href="css/libraries.min.css"/>
     <link rel="stylesheet" href="css/app.min.css"/>
+    <link rel="stylesheet" href="css/lowenco-font.css"/>
     <script src="js/vendor/modernizr.min.js"></script>
   </head>
   <body>
@@ -24,17 +25,17 @@
         <!-- Right Nav Section -->
         <ul class="right">
           <li class="has-dropdown">
-            <a href="#"><i class="fa fa-th-large"></i> <span>Language</span></a>
+            <a href="#"><i class="fa fa-comments"></i> <span>Language</span></a>
             <ul class="dropdown">
               <div class="list-nav">
-              <li><a href="#"><i class="fa fa-th-large"></i> English</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> German</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> French</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Spanish</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Russian</a></li>
-              <li><a href="#"><i class="fa fa-th-large"></i> Chinese</a></li>
+              <li><a href="#"><img width="25" src="images/flags/uk_square.png" alt=""> English</a></li>
+              <li><a href="#"><img width="25" src="images/flags/germany_square.png" alt=""> German</a></li>
+              <li><a href="#"><img width="25" src="images/flags/france_square.png" alt=""> French</a></li>
+              <li><a href="#"><img width="25" src="images/flags/spain_square.png" alt=""> Spanish</a></li>
+              <li><a href="#"><img width="25" src="images/flags/russia_square.png" alt=""> Russian</a></li>
+              <li><a href="#"><img width="25" src="images/flags/china_square.png" alt=""> Chinese</a></li>
               </div>
-              <table class="table-nav">
+        <!--       <table class="table-nav">
                 <tr>
                   <td><a href="#"><i class="fa fa-th-large"></i> English</a></td>
                   <td><a href="#"><i class="fa fa-th-large"></i> German</a></td>
@@ -47,14 +48,31 @@
                   <td><a href="#"><i class="fa fa-th-large"></i> Russian</a></td>
                   <td><a href="#"><i class="fa fa-th-large"></i> Chinese</a></td>
                 </tr>
-              </table>
+              </table> -->
+               
+               <div class="mobile-nav hide-for-large"> 
+                <div class="row">
+                  <div class="left"><a href="#"><img width="25" src="images/flags/uk_square.png" alt=""> English</a></div>
+                  <div class="right"><a href="#"><img width="25" src="images/flags/germany_square.png" alt=""> German</a></div>
+                </div>
+                <div class="row">
+                  <div class="left"><a href="#"><img width="25" src="images/flags/france_square.png" alt=""> French</a></div>
+                 <div class="right"><a href="#"><img width="25" src="images/flags/spain_square.png" alt=""> Spanish</a></div>
+                </div>
+                <div class="row">
+                  <div class="left"><a href="#"><img width="25" src="images/flags/russia_square.png" alt=""> Russian</a></div>
+                  <div class="right"><a href="#"><img width="25" src="images/flags/china_square.png" alt=""> Chinese</a></div>
+                </div>
+              </div>
+
           </li>
           </ul> 
         </ul>
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#"><i class="fa fa-keyboard-o"></i> Model Selector</a></li>
+          <li><a href="#"><span class="lw-icons-selector"></span> Model Selector</a></li>
+          <!-- <li><a href="#"><img src="images/icons-02.svg" width="10" alt=""> Model Selector</a></li> -->
           <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
           <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
           <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
@@ -62,45 +80,157 @@
       </section>
     </nav>
 
-    <div class="container">
-      <div class="row">
+   <div class="container" id="container">
 
-        <div class="large-3 columns">
+      <div class="row">
+        <div class="large-3 medium-4 small-12 columns hide-for-small">
           <ul class="sidenav">
             <li>
-              <a href="#">
-                <div id="item1"></div>
+              <a href="#" data-reveal-id="block1">
+                <div id="item1">
+                  <p class="item-title right">General Info</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#">
-                <div id="item2"></div>
+              <a href="#" data-reveal-id="block2">
+                <div id="item2">
+                  <p class="item-title right">Medical</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#">
-                <div id="item3"></div>
+              <a href="#" data-reveal-id="block3">
+                <div id="item3">
+                  <p class="item-title right">Food / Fish</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#">
-                <div id="item4"></div>
+              <a href="#" data-reveal-id="block4">
+                <div id="item4">
+                  <p class="item-title right">Humanitarian</p>
+                </div>
               </a>
             </li>
             <li>
-              <a href="#">
-                <div id="item5"></div>
+              <a href="#" data-reveal-id="block5">
+                <div id="item5">
+                  <p class="item-title right">Building Systems</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
         
-        <div class="large-9 columns storage-unit">
-            <img src="images/container.png" alt="">
+        <div class="large-9 medium-8 small-12 columns storage-unit"> 
+            <img src="images/container_lines.png" alt="" class="large-centered">
+        </div>
+
+         <dl class="accordion show-for-small" data-accordion>
+          <dd>
+            <a href="#panel1">General Info</a>
+            <div id="panel1" class="content active">
+              Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <img src="images/menu-general.jpg" alt="general">
+            </div>
+          </dd>
+          <dd>
+            <a href="#panel2">Medical</a>
+            <div id="panel2" class="content">
+              Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <img src="images/menu-medical.jpg" alt="medical">
+            </div>
+          </dd>
+          <dd>
+            <a href="#panel3">Food / Fish</a>
+            <div id="panel3" class="content">
+              Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <img src="images/menu-food.jpg" alt="food">
+            </div>
+
+          </dd>
+          <dd>
+            <a href="#panel4">Humanitarian</a>
+            <div id="panel4" class="content">
+              Panel 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <img src="images/menu-humanitarian.jpg" alt="humanitarian">
+            </div>
+          </dd>
+          <dd>
+            <a href="#panel5">Building Systems</a>
+            <div id="panel5" class="content">
+              Panel 5. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <img src="images/menu-building.jpg" alt="building">
+            </div>
+          </dd>
+        </dl>
+
+        <div class="revealblocks">
+          <div id="block1" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>General Information</h3>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers. If your search requires more in-depth research, IACs can support you without your organization incurring common procurement cost.</p>
+            <!-- <img src="http://www.placehold.it/500x300" alt=""> -->
+            <img width="500" src="images/side-cont.jpg" alt="">
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+          <div id="block2" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Medical Information</h3>
+            <p>When you need to focus, Distraction Free Mode is there to help you out. Distraction Free Mode is full screen, chrome free editing, with nothing but your text in the center of the screen. You can incrementally show elements of the UI, such as tabs and the find panel, as you need them.</p>
+            <img width="500" src="images/side-med.jpg" alt="">
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+          <div id="block3" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Food / Fish Information</h3>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers. If your search requires more in-depth research, IACs can support you without your organization incurring common procurement cost.</p>
+            <img width="500" src="images/side-food.jpg" alt="">
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+          <div id="block4" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Humanitarian Information</h3>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers.IACs can support you without your organization incurring common procurement cost.</p>
+            <img width="500" src="images/side-hum.jpg" alt="">
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+          <div id="block5" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Building Systems</h3>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers. If your search requires more in-depth research, IACs can support you without your organization incurring common procurement cost.</p>
+            <img width="500" src="images/side-custom.jpg" alt="">
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
         </div>
 
       </div>
+
+      
+
+      <footer class="row">
+        <p class="right"><small>&copy; 2014, Lowenco. All rights reserved.</small></p>
+      </footer>
     </div>
+
+
+   <!-- This script detects users timezone and changes background position-->
+   <script>
+      var timezone = new Date().getTimezoneOffset() / -60 ;
+      console.log(timezone);
+
+      var bg = document.getElementById("container");
+
+      var moveBg = function () {
+         if (timezone === 1) {
+            bg.style.backgroundPosition = "right 0px top 0px";
+         } else if (timezone === 2) {
+            bg.style.backgroundPosition = "right -100px top 0px";
+         }
+      }
+      moveBg();
+   </script>
 
     
     
