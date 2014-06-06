@@ -192,10 +192,14 @@ border-bottom: 1px solid #eee;
 // this is Toms writing here, please do not edit 
 
 #container {
-	/*height: 100%;*/
+	//height: 100%;
 	background-image: url('../images/background.jpg');
 	background-repeat: no-repeat;
 	background-position: right 0px top 0px;
+}
+
+.container {
+	min-height:90vh;
 }
 
 
@@ -250,8 +254,6 @@ border-bottom: 1px solid #eee;
 		height: 100px;
 	}
 }
-
-
 
 
 .storage-unit {

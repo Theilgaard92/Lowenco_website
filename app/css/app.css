@@ -5176,10 +5176,12 @@ nav {
   border-bottom: 1px solid #eee; }
 
 #container {
-  /*height: 100%;*/
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: right 0px top 0px; }
+
+.container {
+  min-height: 90vh; }
 
 .sidenav li:not(:last-child) {
   margin-bottom: 10px; }
