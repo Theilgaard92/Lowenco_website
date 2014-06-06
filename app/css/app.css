@@ -5089,11 +5089,12 @@ nav {
 .top-bar .top-bar-section .left li a {
   margin-bottom: -1px; }
 .top-bar .top-bar-section .right li a {
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  color: #00468e; }
 .top-bar .top-bar-section .right .has-dropdown .dropdown li a {
   line-height: 70px; }
 
-.top-bar-section .has-dropdown > a:after .toggle-topbar .toggle-menu {
+.toggle-topbar .toggle-menu {
   font-size: 1.1rem; }
 
 .top-bar-section .dropdown li {
