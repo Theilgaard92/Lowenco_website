@@ -77,7 +77,19 @@ nav {
 	}
 }	
 
+// contact page
+.contact-info {
+		margin-left: 0px;
+	li {
+			list-style: none;
+		}
+}
 
+#map_canvas {
+        width: 600px;
+        height: 450px;
+        // background-color: grey;
+      }
 
 .toggle-topbar {	
 	.toggle-menu { 
