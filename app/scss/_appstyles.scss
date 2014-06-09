@@ -88,7 +88,6 @@ nav {
 #map_canvas {
         width: 600px;
         height: 450px;
-        // background-color: grey;
       }
 
 .toggle-topbar {	
@@ -106,6 +105,7 @@ nav {
 .top-bar-section ul li > a {
 	// border-bottom: 1px solid $primary-color;
 }
+
 
 @media (min-width: 900px) {
 	.table-nav {
