@@ -5227,11 +5227,28 @@ nav {
   .storage-unit.small-12 {
     margin-top: 0; }
 
+#main-container {
+  margin-top: 10%;
+  margin-bottom: 10%; }
+
 .revealblocks div {
   display: none;
   position: relative;
   background: #fff; }
 
+
+.reveal-modal-bg {
+  pointer-events: none; }
+
+.tabs.vertical {
+  width: 30%;
+  float: right; }
+
+.tabs .tab-title {
+  float: none; }
+
+.tabs-content.vertical {
+  width: 70%; }
 
 footer p {
   margin-right: 3em; }
