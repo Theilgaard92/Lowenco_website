@@ -17,15 +17,9 @@
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <!-- Google maps -->
-    
-
-
-  
-    <!-- endbuild -->
   </head>
   <body>
-
+    
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
@@ -35,12 +29,12 @@
         <li class="toggle-topbar"><a href="#"><span class="toggle-menu"><i class="fa fa-bars"></i> Menu</span></a></li>
       </ul>
 
-      <section data-topbar data-options="is_hover: false" class="top-bar-section">
+      <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
           <li class="has-dropdown">
             <a href="#"><i class="fa fa-comments"></i> <span>Language</span></a>
-            <ul  class="dropdown">
+            <ul class="dropdown">
               <div class="list-nav">
               <li><a href="#"><img width="25" src="images/flags/uk_square.png" alt=""> English</a></li>
               <li><a href="#"><img width="25" src="images/flags/germany_square.png" alt=""> German</a></li>
@@ -89,7 +83,7 @@
           <!-- <li><a href="#"><img src="images/icons-02.svg" width="10" alt=""> Model Selector</a></li> -->
           <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
           <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
-          <li><a href="#" data-reveal-id="block-contact"><i class="fa fa-envelope-o"></i> Contact us</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
         </ul>
       </section>
     </nav>
@@ -138,7 +132,7 @@
         </div>
         
         <div class="large-9 medium-8 small-12 columns storage-unit"> 
-            <img src="images/container_huge.png" width="600" alt="lowenco container" id="main-container" class="large-centered">
+            <img src="images/container.png" alt="" class="large-centered">
         </div>
 
          <dl class="accordion show-for-small" data-accordion>
@@ -188,30 +182,9 @@
         <div class="revealblocks">
           <div id="block1" class="large-9 medium-12 columns reveal-modal" data-reveal>
             <h3>General Information</h3>
-            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers.</p>
+            <p>Information Analysis Centers (IACs) are research and analysis organizations chartered by the DoD and operated by DTIC. IAC experts help researchers, engineers, scientists and program managers get the information they need, when they need it. DTIC manages 10 IACs, which enable quick access to S&T information worldwide. Basic searches (up to four hours of research) are free to DTIC registered customers. If your search requires more in-depth research, IACs can support you without your organization incurring common procurement cost.</p>
             <!-- <img src="http://www.placehold.it/500x300" alt=""> -->
-            <!-- <img width="500" src="images/side-cont.jpg" alt=""> -->
-
-            <ul class="tabs vertical" data-tab>
-              <li class="tab-title active"><a href="#panel1a">Cooling system</a></li>
-              <li class="tab-title"><a href="#panel2a">Solar power panels</a></li>
-              <li class="tab-title"><a href="#panel3a">Plug&Play setup</a></li>
-            </ul>
-            <div class="tabs-content vertical">
-              <div class="content active" id="panel1a">
-                <p>Panel 1 content goes here.</p>
-                <img src="images/general-1.jpg" alt="">
-              </div> 
-              <div class="content" id="panel2a">
-                <p>Panel 2 content goes here.</p>
-                <img src="images/general-2.jpg" alt="">
-              </div>
-              <div class="content" id="panel3a">
-                <p>Panel 3 content goes here.</p>
-                <img src="images/general-3.jpg" alt="">
-              </div>
-            </div>
-
+            <img width="500" src="images/side-cont.jpg" alt="">
             <a class="close-reveal-modal">&#215;</a>
           </div>
           <div id="block2" class="large-9 medium-12 columns reveal-modal" data-reveal>
@@ -240,25 +213,7 @@
           </div>
         </div>
 
-      <!-- Contact page -->
-        <div id="block-contact" class="large-9 medium-12 columns reveal-modal" data-reveal>
-            <h3>Contact info</h3>
-            <ul class="contact-info left">
-              <li>Phone: +45 22 98 24 00</li>
-              <li>E-mail: info@lowenco.com</li>
-              <br />
-              <li>LOWENCO</li>
-              <li>Bavnevej 10A</li>
-              <li>DK-6580 Vamdrup</li>
-            </ul>
-            <div class="right" id="map_canvas">
-              
-            </div>
-            <a class="close-reveal-modal">&#215;</a>
-          </div>
-       <!-- Contact page END! -->   
       </div>
-
 
       
 
@@ -315,38 +270,6 @@
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-      <script>
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(55.426687,9.294129);
-        var mapOptions = {
-          zoom: 9,
-          center: myLatlng
-        }
-      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Hello World!'
-      });
-    }
-    
-      google.maps.event.addDomListener(window, 'load', initialize);
-      $(document).foundation();
-      $('#block-contact').bind('opened', function() {
-      google.maps.event.trigger(window, 'load', initialize);
-      });
-    </script>
     <!-- endbuild -->
-
-
-
-
-
-
-
-
-
   </body>
 </html>
