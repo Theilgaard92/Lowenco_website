@@ -18,26 +18,8 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <!-- Google maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(55.426687,9.294129);
-        var mapOptions = {
-          zoom: 9,
-          center: myLatlng
-        }
-      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Hello World!'
-      });
-    }
     
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+
 
   
     <!-- endbuild -->
@@ -312,6 +294,38 @@
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(55.426687,9.294129);
+        var mapOptions = {
+          zoom: 9,
+          center: myLatlng
+        }
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Hello World!'
+      });
+    }
+    
+      google.maps.event.addDomListener(window, 'load', initialize);
+      $(document).foundation();
+      $('#block-contact').bind('opened', function() {
+      google.maps.event.trigger(window, 'load', initialize);
+      });
+    </script>
     <!-- endbuild -->
+
+
+
+
+
+
+
+
+
   </body>
 </html>
