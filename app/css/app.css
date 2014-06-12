@@ -5299,6 +5299,16 @@ nav {
   /* IE6-8 */
   border-bottom: 1px solid #eee; }
 
+.contact-info {
+  margin-left: 0px; }
+  .contact-info li {
+    list-style: none; }
+
+#map_canvas {
+  width: 500px;
+  max-width: 600px;
+  height: 400px; }
+
 #container {
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;

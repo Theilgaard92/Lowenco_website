@@ -83,7 +83,7 @@
           <!-- <li><a href="#"><img src="images/icons-02.svg" width="10" alt=""> Model Selector</a></li> -->
           <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
           <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
-          <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
+          <li><a href="#" data-reveal-id="block-contact"><i class="fa fa-envelope-o"></i> Contact us</a></li>
         </ul>
       </section>
     </nav>
@@ -233,6 +233,26 @@
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </div>
+          
+          <!-- Contact page -->
+        <div id="block-contact" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Contact info</h3>
+            <ul class="contact-info left">
+                <li>Phone: +45 22 98 24 00</li>
+                <li>E-mail: info@lowenco.com</li>
+                <br />
+                <li>LOWENCO</li>
+                <li>Bavnevej 10A</li>
+                <li>DK-6580 Vamdrup</li>
+                <li>Denmark</li>
+            </ul>
+            <div class="right" id="map_canvas">
+              
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+       <!-- Contact page END! -->  
+          
 
       </div>
 
@@ -291,6 +311,29 @@
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(55.426687,9.294129);
+        var mapOptions = {
+          zoom: 3,
+          center: myLatlng
+        }
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Hello World!'
+      });
+    }
+    
+      google.maps.event.addDomListener(window, 'load', initialize);
+      $(document).foundation();
+      $('#block-contact').bind('opened', function() {
+      google.maps.event.trigger(window, 'load', initialize);
+      });
+    </script>
     <!-- endbuild -->
   </body>
 </html>
