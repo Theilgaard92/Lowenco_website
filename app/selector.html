@@ -101,22 +101,38 @@
 
                     <h3>Compressor</h3>
                     <section>
-                        <p>Content</p>
+                      <form name="comp" action="">
+                        <input type="radio" name="comp" value="S" id="a1"> S = Single Compressor<br>
+                        <input type="radio" name="comp" value="D" id="a2"> D = Dual Compressor<br>
+                      </form>
                     </section>
 
                     <h3>Environment</h3>
                     <section>
-                        <p>Content</p>
+                      <form name="enviro">
+                        <input type="radio" name="enviro" value="N" id="#"> N = 30C ambient<br>
+                        <input type="radio" name="enviro" value="H" id="#"> H = 45C ambient<br>
+                        <input type="radio" name="enviro" value="X" id="#"> X = 55C ambient<br>
+                      </form>
                     </section>
 
                     <h3>Power source</h3>
                     <section>
-                        <p>Content</p>
+                      <form name="power">
+                        <input type="radio" name="power" value="10" id="#"> 10 = 3 x 400Vac, 50Hz<br>
+                        <input type="radio" name="power" value="20" id="#"> 20 = 3 x 220Vac, 60Hz<br>
+                        <input type="radio" name="power" value="30" id="#"> 30 = Solar powered<br>
+                        <input type="radio" name="power" value="40" id="#"> 40 = Generator powered<br>
+                        <input type="radio" name="power" value="50" id="#"> 50 = Solar + Generator<br>
+                      </form>
                     </section>
 
                     <h3>Configuration</h3>
                     <section>
-                        <p>Content</p>
+                      <form name="config">
+                        <input type="radio" name="config" value="10" id="#"> 10 = Standart configuration<br>
+                        <input type="radio" name="config" value="20" id="#"> 20 = GMP configuration<br>
+                      </form>
                     </section>
                 </div>
             </section>
@@ -201,7 +217,7 @@
     <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+    <!-- <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script> -->
     <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
