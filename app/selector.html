@@ -7,14 +7,13 @@
     <title>Lowenco | Welcome</title>
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="bower_components/jquery-steps/jquery.steps.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/app.min.css -->
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/app_override.css">
-    <link rel="stylesheet" href="bower_components/jquery-steps/jquery-steps.css">
+    <link rel="stylesheet" href="bower_components/jquery-steps/jquery.steps.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -53,7 +52,7 @@
                 </div>
                 <div class="row">
                   <div class="left"><a href="#"><img width="25" src="images/flags/france_square.png" alt=""> French</a></div>
-                 <div class="right"><a href="#"><img width="25" src="images/flags/spain_square.png" alt=""> Spanish</a></div>
+                  <div class="right"><a href="#"><img width="25" src="images/flags/spain_square.png" alt=""> Spanish</a></div>
                 </div>
                 <div class="row">
                   <div class="left"><a href="#"><img width="25" src="images/flags/russia_square.png" alt=""> Russian</a></div>
@@ -86,53 +85,56 @@
               When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.</p>
           </div>
           <div class="large-8 columns">
-            <h2>container number here</h2>
-              <section id="basic-form">
-                <form id="form-2" action="#">
-                    <div id="wizard-2">
-                        <h3>Storage temp.</h3>
-                        <section>
-                            <label for="userName">Storage temperature</label>
-                            <input type="radio" name="temp" value="00" id="1"> 00 = +1C storage temp.<br>
-                            <input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.<br>
-                            <input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.<br>
-                            <input type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.<br>
-                        </section>
+            <h2>CON20-__-__-__-__-__</h2>
+            
+           <section id="basic">
+                <div id="wizard-1">
+                    <h3>Storage temp.</h3>
+                    <section>
+                      <form name="temp" action="">
+                        <input type="radio" name="temp" value="00" id="1"> 00 = +1C storage temp.<br>
+                        <input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.<br>
+                        <input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.<br>
+                        <input  type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.<br>
+                      </form>
+                    </section>
 
-                        <h3>Compressor</h3>
-                        <section>
-                            <label for="name">First name *</label>
-                            <input id="name" name="name" type="text" class="required">
-                            <label for="surname">Last name *</label>
-                            <input id="surname" name="surname" type="text" class="required">
-                            <label for="email">Email *</label>
-                            <input id="email" name="email" type="text" class="required email">
-                            <label for="address">Address</label>
-                            <input id="address" name="address" type="text">
-                            <p>(*) Mandatory</p>
-                        </section>
+                    <h3>Compressor</h3>
+                    <section>
+                      <form name="comp" action="">
+                        <input type="radio" name="comp" value="S" id="a1"> S = Single Compressor<br>
+                        <input type="radio" name="comp" value="D" id="a2"> D = Dual Compressor<br>
+                      </form>
+                    </section>
 
-                        <h3>Environment</h3>
-                        <section>
-                            <ul>
-                                <li>Foo</li>
-                                <li>Bar</li>
-                                <li>Foobar</li>
-                            </ul>
-                        </section>
+                    <h3>Environment</h3>
+                    <section>
+                      <form name="enviro">
+                        <input type="radio" name="enviro" value="N" id="#"> N = 30C ambient<br>
+                        <input type="radio" name="enviro" value="H" id="#"> H = 45C ambient<br>
+                        <input type="radio" name="enviro" value="X" id="#"> X = 55C ambient<br>
+                      </form>
+                    </section>
 
-                        <h3>Power source</h3>
-                        <section>
-                            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
-                        </section>
+                    <h3>Power source</h3>
+                    <section>
+                      <form name="power">
+                        <input type="radio" name="power" value="10" id="#"> 10 = 3 x 400Vac, 50Hz<br>
+                        <input type="radio" name="power" value="20" id="#"> 20 = 3 x 220Vac, 60Hz<br>
+                        <input type="radio" name="power" value="30" id="#"> 30 = Solar powered<br>
+                        <input type="radio" name="power" value="40" id="#"> 40 = Generator powered<br>
+                        <input type="radio" name="power" value="50" id="#"> 50 = Solar + Generator<br>
+                      </form>
+                    </section>
 
-                        <h3>Configuretion</h3>
-                        <section>
-                            <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
-                        </section>
-
-                    </div>
-                </form>
+                    <h3>Configuration</h3>
+                    <section>
+                      <form name="config">
+                        <input type="radio" name="config" value="10" id="#"> 10 = Standart configuration<br>
+                        <input type="radio" name="config" value="20" id="#"> 20 = GMP configuration<br>
+                      </form>
+                    </section>
+                </div>
             </section>
 
           </div>
@@ -192,28 +194,17 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="bower_components/jquery-steps/build/jquery.steps.js"></script>
     <!-- endbower -->
+    <script src="bower_components/jquery-steps/build/jquery.steps.js"></script>
     <script>
-      $("#wizard-2").steps({
+
+      $("#wizard-1").steps({
                 headerTag: "h3",
                 bodyTag: "section",
                 transitionEffect: "slideLeft",
-                onStepChanging: function (event, currentIndex, newIndex)
-                {
-                    $("#form-2").validate().settings.ignore = ":disabled,:hidden";
-                    return $("#form-2").valid();
-                },
-                onFinishing: function (event, currentIndex)
-                {
-                    $("#form-2").validate().settings.ignore = ":disabled";
-                    return $("#form-2").valid();
-                },
-                onFinished: function (event, currentIndex)
-                {
-                    alert("Submitted!");
-                }
+                autoFocus: true
             });
+
 
     </script>
     <!-- endbuild -->
@@ -226,7 +217,7 @@
     <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+    <!-- <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script> -->
     <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>

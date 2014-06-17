@@ -5315,7 +5315,6 @@ nav {
   box-sizing: border-box; }
 
 #container {
-  height: 100%;
   background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: right 0px top 0px; }
@@ -5385,11 +5384,15 @@ nav {
   width: 70%; }
 
 footer {
-  position: absolute;
   bottom: 0; }
   footer p {
-    margin-right: 3em; }
+    margin-right: 3em;
+    margin-bottom: 0;
+    padding: 1em 0; }
 
 .selector {
   background-color: #fff;
   padding: 0 2em; }
+
+#basic {
+  padding-bottom: 2em; }
