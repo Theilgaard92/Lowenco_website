@@ -87,15 +87,16 @@
           <div class="large-8 columns">
             <h2>CON20-__-__-__-__-__</h2>
             
-           <section id="basic">
+           <!-- <section id="basic">
+              <form id="form-2">
                 <div id="wizard-1">
                     <h3>Storage temp.</h3>
                     <section>
-                      <form name="temp" action="">
-                        <input type="radio" name="temp" value="00" id="1"> 00 = +1C storage temp.<br>
-                        <input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.<br>
-                        <input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.<br>
-                        <input  type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.<br>
+                      <form name="temp" action="" id="firstForm" required>
+                        <label><input type="radio" name="temp" value="00" id="1" required> 00 = +1C storage temp.<br>
+                        <label><input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.</label><br>
+                        <label><input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.</label><br>
+                        <label><input  type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.</label><br>
                       </form>
                     </section>
 
@@ -135,7 +136,52 @@
                       </form>
                     </section>
                 </div>
-            </section>
+              </form>
+            </section> -->
+            <form id="form-2" action="#">
+                    <div id="wizard-2">
+                        <h3>Storage temp.</h3>
+                        <section>
+                          <label><input type="radio" name="temp" value="00" id="1" class="required"> 00 = +1C storage temp.<br>
+                          <label><input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.</label><br>
+                          <label><input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.</label><br>
+                          <label><input  type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.</label><br>
+                          <p>* Please select one option</p>
+                        </section>
+
+                        <h3>Compressor</h3>
+                        <section>
+                          <label><input type="radio" name="comp" value="S" id="a1" class="required"> S = Single Compressor</label><br>
+                          <label><input type="radio" name="comp" value="D" id="a2"> D = Dual Compressor</label><br>
+                          <p>* Please select one option</p>
+                        </section>
+
+                        <h3>Environment</h3>
+                        <section>
+                          <label><input type="radio" name="enviro" value="N" id="#" class="required"> N = 30C ambient</label><br>
+                          <label><input type="radio" name="enviro" value="H" id="#"> H = 45C ambient</label><br>
+                          <label><input type="radio" name="enviro" value="X" id="#"> X = 55C ambient</label><br>
+                          <p>* Please select one option</p>
+                        </section>
+
+                        <h3>Power source</h3>
+                        <section>
+                          <label><input type="radio" name="power" value="10" id="#" class="required"> 10 = 3 x 400Vac, 50Hz</label><br>
+                          <label><input type="radio" name="power" value="20" id="#"> 20 = 3 x 220Vac, 60Hz</label><br>
+                          <label><input type="radio" name="power" value="30" id="#"> 30 = Solar powered</label><br>
+                          <label><input type="radio" name="power" value="40" id="#"> 40 = Generator powered</label><br>
+                          <label><input type="radio" name="power" value="50" id="#"> 50 = Solar + Generator</label><br>
+                          <p>* Please select one option</p>
+                        </section>
+
+                        <h3>Configuration</h3>
+                        <section>
+                          <label><input type="radio" name="config" value="10" id="#" class="required"> 10 = Standart configuration</label><br>
+                          <label><input type="radio" name="config" value="20" id="#"> 20 = GMP configuration</label><br>
+                          <p>* Please select one option</p>
+                        </section>
+                    </div>
+                </form>
 
           </div>
       </div>
@@ -187,26 +233,63 @@
       moveBg();
    </script>
 
-    
-    
-
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.validation/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <script src="bower_components/jquery-steps/build/jquery.steps.js"></script>
     <script>
+        $(function ()
+        {
+            function errorPlacement(error, element)
+            {
+                element.before(error);
 
-      $("#wizard-1").steps({
+                // element.popover({
+                //     content: error.text(),
+                //     placement: function ()
+                //     {
+                //         return (element.parents(".content").width() >= 550) ? "right" : "top";
+                //     },
+                //     trigger: "focus hover"
+                // });
+                //$(".popover-content", element.next(".popover")).empty().prepend(error);
+            }
+
+            $("#form-2").validate({
+                errorPlacement: errorPlacement,
+                rules: {
+                    confirm: {
+                        equalTo: "#password"
+                    }
+                }
+            });
+
+            $("#wizard-2").steps({
                 headerTag: "h3",
                 bodyTag: "section",
                 transitionEffect: "slideLeft",
-                autoFocus: true
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    $("#form-2").validate().settings.ignore = ":disabled,:hidden";
+                    return $("#form-2").valid();
+                },
+                onFinishing: function (event, currentIndex)
+                {
+                    $("#form-2").validate().settings.ignore = ":disabled";
+                    return $("#form-2").valid();
+                },
+                onFinished: function (event, currentIndex)
+                {
+                    alert("Submitted!");
+                }
             });
-
-
+        });
     </script>
+
+
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
     <script src="bower_components/foundation/js/foundation/foundation.js"></script>
@@ -224,7 +307,7 @@
     <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+    <!--<script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>-->
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->

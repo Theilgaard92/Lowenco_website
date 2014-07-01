@@ -225,6 +225,7 @@ border-bottom: 1px solid #eee;
 
 
 .sidenav {
+	z-index: 100;
 	li:not(:last-child) {
 		margin-bottom:10px ;
 	}

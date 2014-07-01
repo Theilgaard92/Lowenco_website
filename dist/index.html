@@ -70,11 +70,11 @@
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href="#"><span class="lw-icons-selector"></span> Model Selector</a></li>
+          <li><a href="selector.html"><span class="lw-icons-selector"></span> Model Selector</a></li>
           <!-- <li><a href="#"><img src="images/icons-02.svg" width="10" alt=""> Model Selector</a></li> -->
           <li><a href="#"><i class="fa fa-globe"></i> Dealer Location</a></li>
           <li><a href="#"><i class="fa fa-folder-open-o"></i> Technical Data</a></li>
-          <li><a href="#"><i class="fa fa-envelope-o"></i> Contact us</a></li>
+          <li><a href="#" data-reveal-id="block-contact"><i class="fa fa-envelope-o"></i> Contact us</a></li>
         </ul>
       </section>
     </nav>
@@ -184,16 +184,16 @@
             </ul>
             <div class="tabs-content vertical">
               <div class="content active" id="panel1a">
-                <p>Panel 1 content goes here.</p>
                 <img src="images/general-1.jpg" alt="">
+                <p>Panel 1 content goes here.</p>
               </div> 
               <div class="content" id="panel2a">
-                <p>Panel 2 content goes here.</p>
                 <img src="images/general-2.jpg" alt="">
+                <p>Panel 2 content goes here.</p>
               </div>
               <div class="content" id="panel3a">
-                <p>Panel 3 content goes here.</p>
                 <img src="images/general-3.jpg" alt="">
+                <p>Panel 3 content goes here.</p>
               </div>
             </div>
 
@@ -224,15 +224,36 @@
             <a class="close-reveal-modal">&#215;</a>
           </div>
         </div>
+          
+          <!-- Contact page -->
+        <div id="block-contact" class="large-9 medium-12 columns reveal-modal" data-reveal>
+            <h3>Contact info</h3>
+            <ul class="contact-info left">
+                <li>Phone: +45 22 98 24 00</li>
+                <li>E-mail: info@lowenco.com</li>
+                <br />
+                <li>LOWENCO</li>
+                <li>Bavnevej 10A</li>
+                <li>DK-6580 Vamdrup</li>
+                <li>Denmark</li>
+            </ul>
+            <div class="right" id="map_canvas">
+              
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+       <!-- Contact page END! -->  
+          
 
       </div>
 
       
 
-      <footer class="row">
-        <p class="right"><small>&copy; 2014, Lowenco. All rights reserved.</small></p>
-      </footer>
+      
     </div>
+    <footer class="row">
+      <p class="right"><small>&copy; 2014, Lowenco. All rights reserved.</small></p>
+    </footer>
 
 
    <!-- This script detects users timezone and changes background position-->
