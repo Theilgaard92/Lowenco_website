@@ -83,61 +83,44 @@
             <p>Generate your container model number.
               Here you can select all variations for your container. After selection you will be able to download .pdf file with all the necessary information.
               When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.</p>
+        <!--       <form method="post" name="" action="quotation.php">
+                              <div class="row">
+                                <div class="large-6 columns">
+                                  <label>Name
+                                    <input type="text" name="name" placeholder="Your name here" />
+                                  </label>
+                                </div>
+                                <div class="large-6 columns">
+                                  <label>Lastname
+                                    <input type="text" name="lastname" placeholder="Lastname here" />
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-6 columns">
+                                  <label>Company name
+                                    <input type="text" name="company" value="" placeholder="Your company">
+                                  </label>
+                                </div>
+                                <div class="large-6 columns">
+                                  <label>E-mail
+                                    <input type="text" name="email" value="" placeholder="Your company">
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="large-12 columns">
+                                  <label>Additional details
+                                    <textarea name="message" placeholder="Additional details here"></textarea>
+                                  </label>
+                                </div>
+                              </div>
+                              <input class="button radius" type="submit" name='submit' value="submit">
+                            </form> -->
           </div>
           <div class="large-8 columns">
             <h2>CON20-__-__-__-__-__</h2>
-            
-           <!-- <section id="basic">
-              <form id="form-2">
-                <div id="wizard-1">
-                    <h3>Storage temp.</h3>
-                    <section>
-                      <form name="temp" action="" id="firstForm" required>
-                        <label><input type="radio" name="temp" value="00" id="1" required> 00 = +1C storage temp.<br>
-                        <label><input type="radio" name="temp" value="10" id="2"> 10 = -10C storage temp.</label><br>
-                        <label><input type="radio" name="temp" value="30" id="3"> 30 = -30C storage temp.</label><br>
-                        <label><input  type="radio" name="temp" value="60" id="4"> 60 = -60C storage temp.</label><br>
-                      </form>
-                    </section>
 
-                    <h3>Compressor</h3>
-                    <section>
-                      <form name="comp" action="">
-                        <input type="radio" name="comp" value="S" id="a1"> S = Single Compressor<br>
-                        <input type="radio" name="comp" value="D" id="a2"> D = Dual Compressor<br>
-                      </form>
-                    </section>
-
-                    <h3>Environment</h3>
-                    <section>
-                      <form name="enviro">
-                        <input type="radio" name="enviro" value="N" id="#"> N = 30C ambient<br>
-                        <input type="radio" name="enviro" value="H" id="#"> H = 45C ambient<br>
-                        <input type="radio" name="enviro" value="X" id="#"> X = 55C ambient<br>
-                      </form>
-                    </section>
-
-                    <h3>Power source</h3>
-                    <section>
-                      <form name="power">
-                        <input type="radio" name="power" value="10" id="#"> 10 = 3 x 400Vac, 50Hz<br>
-                        <input type="radio" name="power" value="20" id="#"> 20 = 3 x 220Vac, 60Hz<br>
-                        <input type="radio" name="power" value="30" id="#"> 30 = Solar powered<br>
-                        <input type="radio" name="power" value="40" id="#"> 40 = Generator powered<br>
-                        <input type="radio" name="power" value="50" id="#"> 50 = Solar + Generator<br>
-                      </form>
-                    </section>
-
-                    <h3>Configuration</h3>
-                    <section>
-                      <form name="config">
-                        <input type="radio" name="config" value="10" id="#"> 10 = Standart configuration<br>
-                        <input type="radio" name="config" value="20" id="#"> 20 = GMP configuration<br>
-                      </form>
-                    </section>
-                </div>
-              </form>
-            </section> -->
             <form id="form-2" action="#">
                     <div id="wizard-2">
                         <h3>Storage temp.</h3>
@@ -179,9 +162,57 @@
                           <label><input type="radio" name="config" value="10" id="#" class="required"> 10 = Standart configuration</label><br>
                           <label><input type="radio" name="config" value="20" id="#"> 20 = GMP configuration</label><br>
                           <p>* Please select one option</p>
+                          <div id="show">
+                            <hr>
+                            <p>Download or open this .pdf file in browser to see all the details,<br> specifications and price about your selected container model.</p>
+                            <hr>
+                            <p class="small-4 columns">Technical data</p>
+                            <p class="small-4 columns">See brochure</p>
+                            <p class="small-4 columns"><a href="#" data-reveal-id="quotation" class="button small radius">Request quotation</a></p>
+                          
+                         
                         </section>
                     </div>
                 </form>
+                <div id="quotation" class="reveal-modal" data-reveal>
+                  <a class="close-reveal-modal">&#215;</a>
+                  <h3>Request Quotation</h3>
+                  <p>Please fill out this information and we will contact you as soon as possilble.</p>
+                  <form method="post" name="" action="quotation.php">
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <label>Name
+                          <input type="text" name="name" placeholder="Your name here" />
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label>Lastname
+                          <input type="text" name="lastname" placeholder="Lastname here" />
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <label>Company name
+                          <input type="text" name="company" value="" placeholder="Your company">
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label>E-mail
+                          <input type="text" name="email" value="" placeholder="Your company">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <label>Additional details
+                          <textarea name="message" placeholder="Additional details here"></textarea>
+                        </label>
+                      </div>
+                    </div>
+                    <input class="button radius" type="submit" name='submit' value="submit">
+                  </form>
+                </div>
 
           </div>
       </div>
@@ -194,7 +225,7 @@
           <ul class="contact-info left">
             <li>Phone: +45 22 98 24 00</li>
             <li>E-mail: info@lowenco.com</li>
-            <br />
+            <br/>
             <li>LOWENCO</li>
             <li>Bavnevej 10A</li>
             <li>DK-6580 Vamdrup</li>
@@ -283,7 +314,8 @@
                 },
                 onFinished: function (event, currentIndex)
                 {
-                    alert("Submitted!");
+                    //alert("Submitted!");
+                    $("#show").show();
                 }
             });
         });
