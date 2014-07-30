@@ -119,7 +119,7 @@
                             </form> -->
           </div>
           <div class="large-8 columns">
-            <h2>CON20-__-__-__-__-__</h2>
+            <h2>CON20-<span id="print1">__</span>-<span id="print2">__</span>-<span id="print3">__</span>-<span id="print4">__</span>-<span id="print5">__</span></h2>
 
             <form id="form-2" action="#">
                     <div id="wizard-2">
@@ -365,6 +365,47 @@
       $(document).foundation();
       $('#block-contact').bind('opened', function() {
       google.maps.event.trigger(window, 'load', initialize);
+      });
+    </script>
+    <script> // first selection
+      $(document).ready(function(){
+        $('input[name=temp]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=temp]:checked').val();
+          $('span#print1').html(selValue);
+        });
+      });
+    </script>
+     <script> // second selection
+      $(document).ready(function(){
+        $('input[name=comp]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=comp]:checked').val();
+          $('span#print2').html(selValue);
+        });
+      });
+    </script>
+    <script> // third selection
+      $(document).ready(function(){
+        $('input[name=enviro]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=enviro]:checked').val();
+          $('span#print3').html(selValue);
+        });
+      });
+    </script>
+    <script> // fourth selection
+      $(document).ready(function(){
+        $('input[name=power]').click(function() { // was #btnGetValue for button
+          var selValue = $('input[name=power]:checked').val();
+          $('span#print4').html(selValue);
+        });
+      });
+    </script>
+    <script> // fifth selection
+      $(document).ready(function(){
+        $('input[name=config]').click(function() { // was #btnGetValue for button
+          $("#show").show();
+          var selValue = $('input[name=config]:checked').val();
+          $('span#print5').html(selValue);
+        });
       });
     </script>
     <!-- endbuild -->
